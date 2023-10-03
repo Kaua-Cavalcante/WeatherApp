@@ -10,7 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    
+    background-image: url(../assets/main-bacground.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -20,12 +21,12 @@ body {
 }
 
 .container {
-    background: rgba(35, 35, 35, 0.229);
+    background: rgba(48, 48, 48, 0.18);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(48, 48, 48, 0.18);
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2rem;
@@ -125,4 +126,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
