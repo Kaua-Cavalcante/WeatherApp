@@ -1,6 +1,6 @@
 // Variávei e seleção de elementos
 const apiKey = "d23265705848caf663e8fd5017e03007";
-const apiUnsplash = "https://source.unsplash.com/1600x900/?";
+const apiUnsplash = "https://api.unsplash.com/1600x900/?";
 // const apiCountryURL = "https://flagsapi.com/";
 
 const cityInput = document.querySelector("#city-input");
@@ -31,6 +31,7 @@ const getWeatherData = async (city) => {
   const res = await fetch(apiWeatherURL);
   const data = await res.json();
 
+  console.log(data.name);
   toggleLoader();
 
   return data;
@@ -72,8 +73,9 @@ const showWeatherData = async (city) => {
   windElement.innerText = `${data.wind.speed}km/h`;
 
   //Imagem de fundo dinâmica
-  document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
+  document.body.style.backgroundImage = "https://api.unsplash.com/search/collections?page=1&query=office";
 
+  console.log(apiUnsplash + city);
   weatherContainer.classList.remove("hide");
 };
 
