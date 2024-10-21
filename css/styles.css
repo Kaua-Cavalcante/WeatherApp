@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     
-    background-image: url(../assets/main-bacground.jpg);
+    background-image: url(../assets/main-background.jpg);
     background-position: center;
     background-size: cover;
 }
